@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 
 namespace addDataToDB;
-
 public partial class TestPattern
 {
     public int Id { get; set; }
