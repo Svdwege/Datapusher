@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 
+
 namespace addDataToDB;
 
 public partial class S3digitalTwinContext : DbContext

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("addDataToDB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0be7dd70fd40330183c83286ad12a64dcce8a43a")]
 [assembly: System.Reflection.AssemblyProductAttribute("addDataToDB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("addDataToDB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
