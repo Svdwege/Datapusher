@@ -8,8 +8,14 @@ namespace addDataToDB;
 
 public partial class S3digitalTwinContext : DbContext
 {
+    string DatabaseName { get; set; } = "S3DigitalTwin";
+
     public S3digitalTwinContext()
     {
+    }
+    public S3digitalTwinContext(string DBName)
+    {
+        DatabaseName = DBName;  
     }
     
     public S3digitalTwinContext(DbContextOptions<S3digitalTwinContext> options)
@@ -18,9 +24,10 @@ public partial class S3digitalTwinContext : DbContext
     }
 
     public virtual DbSet<TestPattern> TestPatterns { get; set; }
+    public virtual DbSet<TestPattern> TestPatternstwo { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseMySql("server=localhost;user=root;password=Password123!;database=S3DigitalTwin", Microsoft.EntityFrameworkCore.ServerVersion.Parse("11.5.2-mariadb")).EnableSensitiveDataLogging(true);
+        => optionsBuilder.UseMySql($"server=localhost;user=root;password=Password123!;database={DatabaseName}", Microsoft.EntityFrameworkCore.ServerVersion.Parse("11.5.2-mariadb")).EnableSensitiveDataLogging(true);
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
