@@ -1,4 +1,3 @@
-
 namespace addDataToDB.DB{
 
     class DBWrapper
@@ -26,8 +25,4 @@ namespace addDataToDB.DB{
         }
         
     }
-
-
-
-
 }

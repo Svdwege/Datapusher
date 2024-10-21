@@ -39,6 +39,11 @@ internal static class Program
         
         dbwrapper.LoadData(csv.result);
 
+        var tmp = dbwrapper.db.TestPatterns.Find(12);
+
+        if(tmp != null){
+            Console.WriteLine($"{tmp.ChunkID} {tmp.coordX} {tmp.coordY} {tmp.coordZ} {tmp.gripperOpen}");
+        }
 
         return 0;
     }

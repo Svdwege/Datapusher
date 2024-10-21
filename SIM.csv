@@ -1,0 +1,4 @@
+ChunkID; coordX; coordY; coordZ; gripperOpen;
+0; -130;  -140;  ; false ;
+0; -100;   100;  ; false ;
+0;  200;  -100;  ; false ;
